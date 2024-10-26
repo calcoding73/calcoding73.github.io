@@ -208,6 +208,10 @@ a:hover {
   border: none;
 }
 
+.btn:hover {
+  background: rgba(0, 0, 0, 0.4);
+}  
+
 .button {
   width: 118px;
   height: 38px;
