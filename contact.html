@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Calcoding</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="preloader">
+    <img src="media/preloader.gif" alt="Loading...">
+  </div>
+
+
+    <style>
+* {
+    color: #fff;
+}
+
+
+        .contact-us {
+  background-color: rgba(255, 255, 255, 0.4);
+  margin: 10%;
+  border-radius: 10px;
+}
+
+.contact-us .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.contact-us h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.contact-us p {
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+
+#contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.form-group input, .form-group textarea {
+  width: 300px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button [type="submit"] {
+  padding: 10px 20px;
+  background-color: rgba(255, 255, 255, 0.7);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #555;
+}
+
+.contact-info {
+  margin-top: 40px;
+}
+
+.contact-info h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.contact-info ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contact-info li {
+  margin-bottom: 10px;
+}
+
+.contact-info i {
+  margin-right: 10px;
+}
+    </style>
+
+
+  <div class="rehd">
+    <div class="rehd-h">Follow us on:.</div>
+    <div class="link-img">
+      <a href="#"> Facebook</a>
+      <a href="#">Istagram</a>
+      <a href="#">Twitter</a>
+      <a href="#">YouTube</a>
+    </div>
+  </div>
+
+  <nav>
+    <div class="logo">
+        <li><a href="../index.html">Calcoding</a></li>
+    </div>
+    <div class="links">
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../about/about.html">About us</a></li>
+            <li class="active"><a href="#">Contact us</a></li>
+            <li><a href="../products/products.html">Products</a></li>
+            <li><a href="../tutorials/tutorials.html">Tutorials</a></li>
+            <li><a href="../resources/resources.html">Resources</a></li>
+            <li><a href="../blog/blog.html">Blog</a></li>
+        </ul>
+    </div>
+</nav>
+
+<main>
+    <section class="contact-us">
+        <div class="container">
+          <h2>Contact Us</h2>
+          <p>Get in touch with us for any queries or feedback.</p>
+      
+          <form id="contact-form">
+            <div class="form-group">
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+      
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+      
+            <div class="form-group">
+              <label for="message">Message:</label>
+              <textarea id="message" name="message" required></textarea>
+            </div>
+      
+            <button type="submit">Send Message</button>
+          </form>
+      
+          <div class="contact-info">
+            <h3>Contact Information</h3>
+            <ul>
+              <li><i class="fas fa-phone"></i> +1 555 1234</li>
+              <li><i class="fas fa-envelope"></i> info@example.com</li>
+              <li><i class="fas fa-map-marker-alt"></i> 123 Main St, Anytown, USA</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+</main>
+
+<footer class="footer">
+  <div class="footer-container">
+      <div class="footer-links">
+          <h3>Quick Links</h3>
+          <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Contact</a></li>
+          </ul>
+      </div>
+      <div class="footer-info">
+          <h3>About Us</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+      <div class="footer-social">
+          <h3>Follow Us</h3>
+          <ul>
+            <li><a href="#" target="_blank"><i class="fa-solid fa-facebook"></i></a></li>
+            <li><a href="#" target="_blank"><i class="fa-solid fa-twitter"></i></a></li>
+            <li><a href="#" target="_blank"><i class="fa-solid fa-instagram"></i></a></li>
+          </ul>
+      </div>
+  </div>
+  <div class="footer-copyright">
+      &copy; 2024 Calcoding. All Rights Reserved.
+  </div>
+</footer>
+
+<script src="../script.js"></script>
+</body>
+</html>
