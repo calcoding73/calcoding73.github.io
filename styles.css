@@ -2,6 +2,7 @@
   font-family: verdana;
   list-style: none;
   text-decoration: none;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -13,14 +14,14 @@ body {
   -o-background-size: cover;
   background-size: cover;
   background-position: center;
-  background-attachment: fixed; /* Fix background on scroll */
+  background-attachment: fixed;
 }
 
 .rehd {
   display: flex;
   flex-direction: row;
   align-items: center;
-  height: 20px;
+  height: 40px;
 }
 
 .rehd .rehd-h{
@@ -120,7 +121,7 @@ main {
 }
 
 .footer {
-  background-color: #333;
+  background-color: rgba(0, 0, 0, 0.5);
   color: #fff;
   padding: 40px 0;
 }
@@ -135,6 +136,11 @@ main {
 .footer-links, .footer-info, .footer-social {
   flex-basis: 30%;
 }
+
+.footer-social {
+  margin-left: 30px;
+}
+
 
 h3 {
   margin-top: 0;
@@ -156,166 +162,65 @@ a {
 }
 
 a:hover {
-  text-decoration: underline;
+  text-decoration: none;
+  color: #db59ca;
 }
 
 .footer-copyright {
-  background-color: #444;
+  background-color: rgba(0, 0, 0, 0.5);
   text-align: center;
   padding: 10px 0;
   clear: both;
 }
 
-.preloader {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #ffffff; /* change to your website's background color */
-  z-index: 9999;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.rehd a, .footer-social a {
+  font-size: 25px;
 }
 
-.preloader img {
-  width: 100px;
-  height: 100px;
-}
-
-
-
-
-.header {
-  height: 50px;
-  background-color: #2f2f2f;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 20px;
-  border-bottom: 1px solid #333;
-}
-
-.gradient-btn {
-  background: transparent;
-  border: none;
-  padding: 10px 20px;
-  font-size: 16px;
-  color: #fff;
-  cursor: pointer;
-  border-radius: 10px;
-  background-image: linear-gradient(120deg, #4CAF50, #8BC34A, #3E8E41);
-  background-size: 200% 200%;
-  animation: gradient-animate 4s ease infinite;
-  transition: transform 0.3s;
-}
-
-.gradient-btn:hover {
-  transform: scale(1.1);
-}
-
-@keyframes gradient-animate {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-
-
-
-
-.code-animation {
-  position: relative;
-  width: 80%;
-  margin: 40px auto;
-  background-color: #2f2f2f;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-#language-selector {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  top: 10px;
-  left: 0;
-  width: 100%;
-  color: #fff;
-  font-size: 16px;
-}
-
-#language {
-  margin: 0 auto;
-}
-
-#code {
-  font-family: 'Monaco', monospace;
-  font-size: 16px;
-  line-height: 1.5;
-  white-space: pre-wrap;
-  color: #fff;
-}
-
-#cursor {
-  color: #66d9ef;
-  animation: blink 0.5s infinite;
-  font-size: 16px;
-}
-
-#output {
-  font-family: 'Monaco', monospace;
-  font-size: 16px;
-  line-height: 1.5;
-  white-space: pre-wrap;
-  background-color: #f7f7f7;
-  padding: 10px;
-  border-radius: 10px;
+.main-section {
   margin-top: 20px;
-}
-
-/* Responsiveness */
-@media only screen and (max-width: 768px) {
-  .code-animation {
-    width: 90%;
-    margin: 20px auto;
-  }
-  #code {
-    font-size: 14px;
-  }
-  #output {
-    font-size: 14px;
-  }
-}
-
-@media only screen and (max-width: 480px) {
-  .code-animation {
-    width: 95%;
-    margin: 10px auto;
-  }
-  #code {
-    font-size: 12px;
-  }
-  #output {
-    font-size: 12px;
-  }
-  #language-selector {
-    font-size: 14px;
-  }
-}
-
-.csa {
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 200px;
   display: flex;
   align-items: center;
   justify-content: center;
-  text-decoration: none;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  height: 480px;
+}
+
+.h1 {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn {
+  width: 120px;
+  height: 40px;
+  border-radius: 10px;
+  background: linear-gradient(268deg, #b6128d, #5806f0, #b6128d);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+  border: none;
+}
+
+.button {
+  width: 118px;
+  height: 38px;
+  border-radius: 10px;
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  outline: none;
+  border: none;
+}
+
+@media screen and (max-width: 768px){
+  
 }
