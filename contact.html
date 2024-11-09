@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="google-adsense-account" content="ca-pub-9629580780085828">
     <title>Contact - Calcoding</title>
-    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
@@ -15,92 +15,104 @@
 
 
     <style>
-* {
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
     color: #fff;
+    padding: 1em;
+    text-align: center;
 }
 
-
-        .contact-us {
-  background-color: rgba(255, 255, 255, 0.4);
-  margin: 10%;
-  border-radius: 10px;
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
 }
 
-.contact-us .container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
+header nav ul li {
+    margin-right: 20px;
 }
 
-.contact-us h2 {
-  font-size: 36px;
-  margin-bottom: 20px;
+header nav a {
+    color: #000;
+    text-decoration: none;
 }
 
-.contact-us p {
-  font-size: 18px;
-  margin-bottom: 40px;
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em;
 }
 
-#contact-form {
-  display: flex;
-  flex-direction: column;
+.contact-section {
+    background-color: #f7f7f7;
+    padding: 2em;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px; /* added border radius */
+    margin-top: 120px;
+}
+
+.contact-section h1 {
+    margin-top: 0;
 }
 
 .form-group {
-  margin-bottom: 20px;
-  width: 100%;
+    margin-bottom: 1em;
 }
 
-.form-group label {
-  display: block;
-  margin-bottom: 10px;
+label {
+    display: block;
+    margin-bottom: 0.5em;
 }
 
-.form-group input, .form-group textarea {
-  width: 300px;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+input, textarea {
+    width: 100%;
+    padding: 0.5em;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
 }
 
-.lopl {
-  margin-left: 0;
+textarea {
+    resize: vertical;
+    overflow-y: auto;
+    max-height: 250px;
+    min-height: 25px;
 }
-
-button [type="submit"] {
-  padding: 10px 20px;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
+button[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    padding: 0.5em 1em;
+    border: none;
+    border-radius: 0.5em;
+    cursor: pointer;
 }
 
 button[type="submit"]:hover {
-  background-color: rgba(255, 255, 255, 0.4);
+    background-color: #444;
 }
 
 .contact-info {
-  margin-top: 40px;
+    margin-top: 2em;
 }
 
-.contact-info h3 {
-  font-size: 24px;
-  margin-bottom: 10px;
+
+#success-message {
+    color: #2ecc71;
+    font-weight: bold;
+    margin-top: 1em;
 }
 
-.contact-info ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.contact-info li {
-  margin-bottom: 10px;
-}
-
-.contact-info i {
-  margin-right: 10px;
+.contact-info p a{
+color: #000;
 }
     </style>
 
@@ -119,8 +131,9 @@ button[type="submit"]:hover {
     <div class="logo">
         <li><a href="index.html">Calcoding</a></li>
     </div>
+
+
     <div class="links">
-        <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About us</a></li>
             <li class="active"><a href="contact.html">Contact us</a></li>
@@ -128,99 +141,184 @@ button[type="submit"]:hover {
             <li><a href="tutorials.html">Tutorials</a></li>
             <li><a href="resources.html">Resources</a></li>
             <li><a href="blog.html">Blog</a></li>
-        </ul>
     </div>
-</nav>
+
+
+
+
+    <a id="show-menu" href="#">
+        <div class="show-menu">
+             <span class="line top"></span>
+             <span class="line middle"></span>
+             <span class="line bottom"></span>
+         </div>
+     </a>
+
+ </nav>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section>
+<div id="menu-container">
+ <form id="menu-form">
+   <div class="links" id="links">            
+       <div class="one"><li><a href="index.html">Home</a></li></div>
+   <div class="two"><li><a href="about.html">About us</a></li></div>
+   <div class="three"><li class="active"><a href="contact.html">Contact us</a></li></div>
+   <div class="four"><li><a href="products.html">Products</a></li></div>
+   <div class="five"><li><a href="tutorials.html">Tutorials</a></li></div>
+   <div class="six"><li><a href="resources.html">Resources</a></li></div>
+   <div class="seven"><li><a href="blog.html">Blog</a></li></div>
+   </div>
+ </form>
+</div>
+</section>
+
 
 <main>
-    <section class="contact-us">
-        <div class="container">
-          <h2>Contact Us</h2>
-          <p>Get in touch with us for any queries or feedback.</p>
-      
-          <form id="contact-form">
-            <div class="form-group">
-              <label for="name">Name:</label>
-              <input type="text" id="name" name="name" required>
+        <section class="contact-section">
+            <h1>Get in Touch</h1>
+            <p>We'd love to hear from you!</p>
+            <form id="contact-form">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <button type="submit">Send Message</button>
+            </form>
+            <div class="contact-info">
+                <h2>Contact Information</h2>
+                <p>Address: Chichri, Blantyre, MW</p>
+                <p>Phone: +265 222 040 052</p>
+                <p>Email: <a href="mailto:calcoding57@gmail.com">calcoding57@gmail.com</a></p>
             </div>
-      
-            <div class="form-group">
-              <label for="email">Email:</label>
-              <input type="email" id="email" name="email" required>
+            <div id="success-message" style="display:none;">
+                <p>Thanks for reaching out! We have received your message and will respond within 24-48 hours.</p>
             </div>
-      
-            <div class="form-group">
-              <label for="message">Message:</label>
-              <textarea id="message" name="message" required></textarea>
-            </div>
-      
-            <div class="lopl"><div class="btn"><button type="submit" class="button">Send Message</button></div></div>
-          </form>
-      
-          <div class="contact-info">
-            <h3>Contact Information</h3>
-            <ul>
-              <li><i class="fas fa-envelope"></i> calcoding57@gmail.com</li>
-              <li><i class="fas fa-map-marker-alt"></i> Chichiri, Blantyre, MW</li>
-            </ul>
-          </div>
-        </div>
-      </section>
+        </section>
 </main>
 
 <footer class="footer">
-  <div class="footer-container">
-      <div class="footer-links">
-          <h3>Quick Links</h3>
-          <ul>
-              <li><a href="index.html">Home</a></li>
-              <li><a href="about.html">About</a></li>
-              <li><a href="contact.html">Contact</a></li>
-          </ul>
-      </div>
-      <div class="footer-info">
-          <h3>About Us</h3>
-          <p>We empower coders through tutorials, 
+    <div class="footer-container">
+
+        <div class="footer-info">
+            <h3>About Us</h3>
+            <p>We empower coders through tutorials, <br> 
                 projects and expert guidance.</p>
+        </div>
+
+
+
+          <div class="footer-social">
+            <h3>Follow Us on</h3>
+            <ul>
+              <a href="https://www.facebook.com/profile.php?id=61567912194514" target="_blank"><i class='bx bxl-facebook-circle'></i></a>
+              <a href="#"><i class='bx bxl-instagram'></i></a>
+              <a href="#"><i class='bx bxl-twitter'></i></a>
+              <a href="#"><i class='bx bxl-youtube'></i></a>
+            </ul>
+        </div>
+
+
+
+      <div class="footer-info">
+          <h3>Contact Information</h3>
+          <p>Email: calcoding57@gmail.com <br>
+          Adress: Chichiri, Blantyre, MW.
+          </p>
       </div>
 
 
 
-        <div class="footer-social">
-          <h3>Follow Us on</h3>
-          <ul>
-            <a href="https://www.facebook.com/profile.php?id=61567912194514" target="_blank"><i class='bx bxl-facebook-circle'></i></a>
-            <a href="#"><i class='bx bxl-instagram'></i></a>
-            <a href="#"><i class='bx bxl-twitter'></i></a>
-            <a href="#"><i class='bx bxl-youtube'></i></a>
-          </ul>
-      </div>
 
 
 
-    <div class="footer-info">
-        <h3>Contact Information</h3>
-        <p>Email: calcoding57@gmail.com <br>
-        Adress: Chichiri, Blantyre, MW.
-        </p>
+
+
+
+
+
     </div>
 
-
-
-
-
-
-
-
-
-
-
-  </div>
-  <div class="footer-copyright">
+    <div class="footer-copyright">
       &copy; 2024 Calcoding. All Rights Reserved.
   </div>
-</footer>
+  </footer>
 
-<script src="../script.js"></script>
+<script src="script.js"></script>
+<script>
+const form = document.getElementById('contact-form');
+const successMessage = document.getElementById('success-message');
+
+form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const phone = document.getElementById('phone').value;
+    const message = document.getElementById('message').value;
+
+    // Form validation
+    if (!name || !email || !phone || !message) {
+        alert('Please fill in all fields.');
+        return;
+    }
+
+    // Send email using EmailJS
+    var serviceId = 'your_service_id';
+    var templateId = 'your_template_id';
+    var userId = 'your_user_id';
+
+    emailjs.send(
+        serviceId,
+        templateId,
+        {
+            name: name,
+            email: email,
+            phone: phone,
+            message: message
+        },
+        userId
+    )
+    .then(
+        (response) => {
+            console.log('Email sent successfully', response);
+            successMessage.style.display = 'block';
+            form.reset();
+            setTimeout(() => {
+                successMessage.style.display = 'none';
+            }, 5000);
+        },
+        (error) => {
+            console.log('Email sending failed', error);
+        }
+    );
+});
+</script>
+<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
 </body>
 </html>

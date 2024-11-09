@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="google-adsense-account" content="ca-pub-9629580780085828">
     <title>Products - Calcoding</title>
-    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
@@ -13,6 +13,156 @@
 </head>
 <body>
 
+
+<style>
+
+/* Global Styles */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #fff;
+    display: flex;
+}
+
+main {
+    margin-top: 120px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 40px auto;
+    margin-top: 120px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 20px;
+    padding: 20px;
+}
+
+.product-post {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.product-post img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+.product-info {
+    padding: 20px;
+}
+
+.product-info h2 {
+    margin-top: 0;
+}
+
+.product-info span {
+    font-weight: bold;
+}
+.product-info button {
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.product-info button:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+/* Responsive Design */
+
+@media only screen and (max-width: 768px) {
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+    .product-post {
+        margin-bottom: 20px;
+    }
+}
+
+/* Button Styles */
+
+button {
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+button:active {
+    transform: scale(0.9);
+}
+
+/* Text Styles */
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: Arial, sans-serif;
+    color: #fff;
+}
+
+p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #ccc;
+}
+
+span {
+    font-size: 12px;
+    line-height: 1.6;
+    color: #ccc;
+}
+
+/* Other Styles */
+
+hr {
+    border-color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+a:hover {
+    color: #ccc;
+}
+
+h2 {
+font-size: 1rem;
+}
+
+</style>
 
 
     <div class="rehd">
@@ -26,37 +176,166 @@
       </div>
 
   <nav>
-    <div class="logo">
-        <li><a href="index.html">Calcoding</a></li>
+    <nav>
+        <div class="logo">
+            <li><a href="index.html">Calcoding</a></li>
+        </div>
+    
+    
+        <div class="links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About us</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+                <li class="active"><a href="products.html">Products</a></li>
+                <li><a href="tutorials.html">Tutorials</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="blog.html">Blog</a></li>
+        </div>
+    
+    
+    
+    
+         <a id="show-menu" href="#">
+             <div class="show-menu">
+                  <span class="line top"></span>
+                  <span class="line middle"></span>
+                  <span class="line bottom"></span>
+              </div>
+          </a>
+    
+      </nav>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <section>
+    <div id="menu-container">
+      <form id="menu-form">
+        <div class="links" id="links">            
+            <div class="one"><li><a href="index.html">Home</a></li></div>
+        <div class="two"><li><a href="about.html">About us</a></li></div>
+        <div class="three"><li><a href="contact.html">Contact us</a></li></div>
+        <div class="four"><li class="active"><a href="products.html">Products</a></li></div>
+        <div class="five"><li><a href="tutorials.html">Tutorials</a></li></div>
+        <div class="six"><li><a href="resources.html">Resources</a></li></div>
+        <div class="seven"><li><a href="blog.html">Blog</a></li></div>
+        </div>
+      </form>
     </div>
-    <div class="links">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About us</a></li>
-            <li><a href="contact.html">Contact us</a></li>
-            <li class="active"><a href="products.html">Products</a></li>
-            <li><a href="tutorials.html">Tutorials</a></li>
-            <li><a href="resources.html">Resources</a></li>
-            <li><a href="blog.html">Blog</a></li>
-        </ul>
-    </div>
-</nav>
+    </section>
 
-<main></main>
+
+
+<main>
+
+
+
+
+<div class="container">
+    <h1>Our Products</h1>
+    <div class="product-grid">
+        <!-- Product 1 -->
+        <div class="product-post">
+            <img src="image-1.jpg" alt="Product 1">
+            <div class="product-info">
+                <h2>CalCoding Video Editor</h2>
+                <span>$19.99</span>
+                <button>Buy Now</button>
+            </div>
+        </div>
+        
+        <!-- Product 2 -->
+        <div class="product-post">
+            <img src="image-2.jpg" alt="Product 2">
+            <div class="product-info">
+                <h2>PhotoPro Editor</h2>
+                <span>$29.99</span>
+                <button>Buy Now</button>
+            </div>
+        </div>
+        
+        <!-- Product 3 -->
+        <div class="product-post">
+            <img src="image-3.jpg" alt="Product 3">
+            <div class="product-info">
+                <h2>AudioMaster</h2>
+                <span>$39.99</span>
+                <button>Buy Now</button>
+            </div>
+        </div>
+        
+        <!-- Product 4 -->
+        <div class="product-post">
+            <img src="image-4.jpg" alt="Product 4">
+            <div class="product-info">
+                <h2>MobileGuard</h2>
+                <span>$9.99</span>
+                <button>Buy Now</button>
+            </div>
+        </div>
+        
+        <!-- Product 5 -->
+        <div class="product-post">
+            <img src="image-5.jpg" alt="Product 5">
+            <div class="product-info">
+                <h2>MacCleaner</h2>
+                <span>$19.99</span>
+                <button>Buy Now</button>
+            </div>
+        </div>
+        
+        <!-- Product 6 -->
+        <div class="product-post">
+            <img src="image-6.jpg" alt="Product 6">
+            <div class="product-info">
+                <h2>WinBoost</h2>
+                <span>$29.99</span>
+                <button>Buy Now</button>
+            </div>
+        </div>
+        
+        <!-- Product 7 -->
+        <div class="product-post">
+            <img src="image-7.jpg" alt="Product 7">
+            <div class="product-info">
+                <h2>iPhone Backup Pro</h2>
+                <span>$9.99</span>
+                <button>Buy Now</button>
+            </div>
+        </div>
+        
+        <!-- Product 8 -->
+        <div class="product-post">
+            <img src="image-8.png" alt="Product 8">
+            <div class="product-info">
+                <h2>Android Doctor</h2>
+                <span>$19.99</span>
+                <button>Buy Now</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+</main>
 
 <footer class="footer">
     <div class="footer-container">
-        <div class="footer-links">
-            <h3>Quick Links</h3>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </div>
+
         <div class="footer-info">
             <h3>About Us</h3>
-            <p>We empower coders through tutorials, 
+            <p>We empower coders through tutorials, <br> 
                 projects and expert guidance.</p>
         </div>
 
@@ -92,11 +371,32 @@
 
 
     </div>
+
     <div class="footer-copyright">
-        &copy; 2024 Calcoding. All Rights Reserved.
-    </div>
+      &copy; 2024 Calcoding. All Rights Reserved.
+  </div>
   </footer>
 
-<script src="../script.js"></script>
+<script src="script.js"></script>
+<script>
+// Add event listener to Read More button
+document.querySelectorAll('.read-more').forEach(button => {
+    button.addEventListener('click', () => {
+        // Get the more-info element
+        const moreInfo = button.nextElementSibling;
+        
+        // Toggle the hidden class
+        moreInfo.classList.toggle('hidden');
+        moreInfo.classList.toggle('show');
+        
+        // Change button text
+        if (moreInfo.classList.contains('show')) {
+            button.textContent = 'Read Less';
+        } else {
+            button.textContent = 'Read More';
+        }
+    });
+});
+</script>
 </body>
 </html>
