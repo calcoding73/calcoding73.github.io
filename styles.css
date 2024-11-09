@@ -26,6 +26,7 @@ body {
   top: 0;
   background: rgba(0, 0, 0, 0.7);
   width: 100%;
+  display: none;
 }
 
 .rehd .rehd-h{
@@ -572,6 +573,7 @@ border-radius: 10px;
     top: 0;
     background: rgba(0, 0, 0, 0.7);
     width: 100%;
+      display: none;
   }
 
 .rehd .rehd-h{
@@ -870,6 +872,7 @@ a:hover {
   top: 0;
   background: rgba(0, 0, 0, 0.7);
   width: 100%;
+    display: none;
 }
 
 .rehd .rehd-h{
@@ -1198,6 +1201,7 @@ a:hover {
   top: 0;
   background: rgba(0, 0, 0, 0.7);
   width: 100%;
+    display: none;
 }
 
 .rehd .rehd-h{
@@ -1512,6 +1516,7 @@ a:hover {
   top: 0;
   background: rgba(0, 0, 0, 0.7);
   width: 100%;
+    display: none;
 }
 
 .rehd .rehd-h{
